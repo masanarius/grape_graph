@@ -6,34 +6,34 @@ import math
 from datetime import timedelta
 
 # === グラフ設定 ===
-show_title = True
-title_str = "Engagement over Time"
-show_xlabel = True
-xlabel_str = "Time"
-show_ylabel = True
-ylabel_str = "Engagement Level"
+show_title = True                   # 図のタイトルを表示するときはTrue
+show_xlabel = True                  # X軸ラベルを表示するときはTrue    
+show_ylabel = True                  # Y軸ラベルを表示するときはTrue
+show_xticks = True                  # X軸の目盛を表示するときはTrue
+show_yticks = True                  # Y軸の目盛を表示するときはTrue
+title_str = "Engagement over Time"  # 図のタイトルは〇
+xlabel_str = "Time"                 # X軸ラベルは〇
+ylabel_str = "Engagement Level"     # Y軸ラベルは〇
 
 # === 図のスタイル設定 ===
-fig_width = 10
-fig_height = 5
-show_xticks = True
-show_yticks = True
-legend_location = 'right'
+fig_width = 10                      # 図の横の長さは〇インチ
+fig_height = 5                      # 図の縦の長さは〇インチ
+legend_location = 'right'           # 凡例を表示する場所は〇．rightは外．
 
 # === 各列（P_n）がすべてゼロなら描画しないオプション ===
-skip_column_if_all_zero = True
+skip_column_if_all_zero = True      # 列の値が全てゼロの場合にその列のグラフの描画をスキップする場合はTrue
 
 # === X軸の表示モードとスタイル ===
-x_axis_mode = "elapsed"   # "clock" or "elapsed"
-x_axis_format = "colon"   # "colon" or "symbol"
+x_axis_mode = "elapsed"             # X軸の時間の表示方式は〇．"clock" or "elapsed"
+x_axis_format = "colon"             # X軸の時間の表示形式は〇．"colon" or "symbol"
 
 # === X軸のカスタム設定 ===
-use_custom_xlim = False
-custom_xlim_start = "20:28:00.000"
-custom_xlim_end   = "20:29:00.000"
+use_custom_xlim = False             # X軸の開始時刻と終了時刻を手動で入力するときはTrue
+custom_xlim_start = "20:28:00.000"  # X軸の開始時刻は〇
+custom_xlim_end   = "20:29:00.000"  # X軸の終了時刻は〇
 
 # === X軸ラベルの表示間隔（秒） ===
-xtick_interval_seconds = 5  # 5, 10, 15, 20, 30, 60 のみ対応
+xtick_interval_seconds = 5          # X軸の目盛は〇秒刻み． 5, 10, 15, 20, 30, 60 のみ対応
 
 # === ファイルのプレフィックス設定 ===
 input_prefix_engage = "engagement_dialog_"
